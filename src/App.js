@@ -10,10 +10,13 @@ import {
 } from "react-router-dom";
 import Dashboard from './components/layout/Dashboard';
 import Login from './components/login/Login';
+import { Provider } from 'react-redux';
+import { store } from './store/store';
 
 
 function App() {
   return (
+    <Provider store= {store}>
     <div className="App">
 
 <Router>
@@ -65,6 +68,7 @@ function App() {
         </a>
       </header> */}
     </div>
+    </Provider>
   );
 }
 
