@@ -12,6 +12,7 @@ import Dashboard from './components/layout/Dashboard';
 import Login from './components/login/Login';
 import { Provider } from 'react-redux';
 import { store } from './store/store';
+import ServiciosAgente from './views/lupersonal/ServiciosAgente';
 
 
 function App() {
@@ -43,6 +44,9 @@ function App() {
     </Route>
     <Route path="/login">
       <Login />
+    </Route>
+    <Route path="/serviciosagente">
+      <ServiciosAgente />
     </Route>          
   </Switch>
 
