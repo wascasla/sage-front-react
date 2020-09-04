@@ -16,13 +16,17 @@ import ServiciosAgente from './views/lupersonal/ServiciosAgente';
 
 
 function App() {
-  return (
-    <Provider store= {store}>
-    <div className="App">
 
-<Router>
-      
-      {/* <nav>
+  console.log(process.env);
+
+
+  return (
+    <Provider store={store}>
+      <div className="App">
+
+        <Router>
+
+          {/* <nav>
         <ul>
           <li>
             <Link to="/">Home</Link>
@@ -36,25 +40,25 @@ function App() {
         </ul>
       </nav> */}
 
-  {/* A <Switch> looks through its children <Route>s and
+          {/* A <Switch> looks through its children <Route>s and
       renders the first one that matches the current URL. */}
-  <Switch>
-    <Route path="/home">
-      <Dashboard />
-    </Route>
-    <Route path="/login">
-      <Login />
-    </Route>
-    <Route path="/serviciosagente">
-      <ServiciosAgente />
-    </Route>          
-  </Switch>
+          <Switch>
+            <Route path="/home">
+              <Dashboard />
+            </Route>
+            <Route path="/login">
+              <Login />
+            </Route>
+            <Route path="/serviciosagente">
+              <ServiciosAgente />
+            </Route>
+          </Switch>
 
-</Router>
+        </Router>
 
 
 
-      {/* <header className="App-header">
+        {/* <header className="App-header">
       <Button variant="contained" color="primary">
       Hello World
     </Button>
@@ -71,7 +75,7 @@ function App() {
           Learn React
         </a>
       </header> */}
-    </div>
+      </div>
     </Provider>
   );
 }
