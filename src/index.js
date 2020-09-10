@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import Dashboard from './components/layout/Dashboard';
+
 
 ReactDOM.render(
   <React.StrictMode>

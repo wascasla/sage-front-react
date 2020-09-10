@@ -1,14 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
-import ReactDOM from 'react-dom';
-import Button from '@material-ui/core/Button';
+
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link
 } from "react-router-dom";
-import Dashboard from './components/layout/Dashboard';
+
 import Login from './components/login/Login';
 import { Provider } from 'react-redux';
 import { store } from './store/store';
@@ -43,9 +41,7 @@ function App() {
           {/* A <Switch> looks through its children <Route>s and
       renders the first one that matches the current URL. */}
           <Switch>
-            <Route path="/home">
-              <Dashboard />
-            </Route>
+
             <Route path="/login">
               <Login />
             </Route>
